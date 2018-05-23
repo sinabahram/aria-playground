@@ -8,16 +8,15 @@ Braille Input
 
 <body>
 <h1>Braille Example</h1>
-<p>
-ToDo: Put an input of either text or textarea on the screen where raw Braille input is accepted without translation.
-</p>
-    
-<h2>Braille Form</h2>    
-<form>
-  Name:<br>
-  <input id="name-input" aria-braille="true" type="text" name="firstname"><br>
 
-<textarea id="text-input" aria-braille="true" name="brailleInput" rows="10" cols="30"form="userform">Enter Braille here...</textarea>
+ 
+<form>
+    <label for"name-input">Name</label>
+    <input id="name-input" aria-braille="true" type="text" name="firstname">
+    <br/>
+        <label for"text-input">Description</label>
+
+        <textarea id="text-input" labelfor="text-input" aria-braille="true" name="brailleInput" rows="10" cols="30"form="userform">Enter Braille here...</textarea>
     
 </form>
 
