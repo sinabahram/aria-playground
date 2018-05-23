@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<meta charset="utf-8" >
 <title>
 Custom Braille Output
 </title>
@@ -8,9 +9,74 @@ Custom Braille Output
 
 <body>
 
+<h1>Custom Braille Output</h1>
+
 <p>
-ToDo: Put multiple controls on the screen where their Braille representation differs from their speech representation for aria-label and aria-role-description, using a tentative aria-label-braille aria-role-description-braille
+Below is a sample question where custom Braille roles are used for abbreviation on the Braille display.
 </p>
+
+<form>
+<h2>Question 1</h2>
+<p>
+Choose the furthest planet from the sun.
+</p>
+<ul>
+<li>
+<button onclick="togglePressed(this)" aria-pressed="false"  type="button" aria-label="Saturn" aria-role-description="planet" aria-role-description-braille="pln" id="saturn">
+<img src="images/saturn.jpg" />
+</button>
+</li>
+
+<li>
+<button onclick="togglePressed(this)"  aria-pressed="false"  type="button" aria-label="Venus" aria-role-description="planet" aria-role-description-braille="pln" id="venus">
+<img src="images/venus.jpg" />
+</button>
+</li>
+
+<li>
+<button onclick="togglePressed(this)"  aria-pressed="false"  type="button" aria-label="Mercury" aria-role-description="planet" aria-role-description-braille="pln" id="mercury">
+<img src="images/mercury.jpg" />
+</button>
+</li>
+
+<li>
+<button onclick="togglePressed(this)"  aria-pressed="false"  type="button" aria-label="Uranus" aria-role-description="planet" aria-role-description-braille="pln" id="uranus" >
+<img src="images/uranus.jpg" />
+</button>
+</li>
+
+<li>
+<button onclick="togglePressed(this)"  aria-pressed="false"  type="button" aria-label="Earth" aria-role-description="planet" aria-role-description-braille="pln" id="earth" >
+<img src="images/earth.jpg" />
+</button>
+</li>
+
+<li>
+<button onclick="togglePressed(this)"  aria-pressed="false"  type="button" aria-label="Jupiter" aria-role-description="planet" aria-role-description-braille="pln" id="jupiter" >
+<img src="images/jupiter.jpg" />
+</button>
+</li>
+
+<li>
+<button onclick="togglePressed(this)"  aria-pressed="false"  type="button" aria-label="Neptune" aria-role-description="planet" aria-role-description-braille="pln" id="neptune">
+<img src="images/neptune.jpg" />
+</button>
+</li>
+
+<li>
+<button onclick="togglePressed(this)"  aria-pressed="false"  type="button" aria-label="Mars" aria-role-description="planet" aria-role-description-braille="pln" id="mars" >
+<img src="images/mars.jpg" />
+</button>
+</li>
+</ul>
+
+</form>
+
+<script>
+function togglePressed(source) {
+source.setAttribute('aria-pressed', source.getAttribute('aria-pressed') == 'true' ? 'false' : 'true');
+}
+</script>
 
 </body>
 </html>
