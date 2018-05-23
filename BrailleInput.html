@@ -8,20 +8,19 @@ Braille Input
 </head>
 
 <body>
-<h1>Braille Example</h1>
-
+<h1>Braille Input</h1>
  
 <form>
     <label for"name-input">Name</label>
-    <input id="name-input" aria-braille="true" type="text" name="firstname">
+    <input id="name-input" aria-braille-input="true" type="text" name="firstname" />
     <br/>
-        <label for"text-input">Description</label>
 
-        <textarea id="text-input" labelfor="text-input" aria-braille="true" name="brailleInput" rows="10" cols="30"form="userform">Enter Braille here...</textarea>
-    
+        <label for="text-input">Description</label>
+        <textarea id="text-input" aria-braille-input="true" rows="10" cols="30">
+            Enter Braille here...
+        </textarea>
+
 </form>
-
-    
-
+   
 </body>
 </html>
