@@ -12,11 +12,35 @@ Custom Braille Output
 <h1>Custom Braille Output</h1>
 
 <p>
-Below is a sample question where custom Braille roles are used for abbreviation on the Braille display.
+Below are sample questions where custom Braille roles are used for abbreviation on the Braille display and differ from role descriptions in speech.
 </p>
 
 <form>
 <h2>Question 1</h2>
+<p>
+Turn the lights on in the kitchen.
+</p>
+<ul>
+<li>
+<button type="button" aria-role-description="light switch" aria-role-description-braille="ltsw" aria-pressed="false" onclick="togglePressed(this)">
+Bathroom
+</button>
+</li>
+
+<li>
+<button type="button" aria-role-description="light switch" aria-role-description-braille="ltsw" aria-pressed="false" onclick="togglePressed(this)">
+Kitchen
+</button>
+</li>
+
+<li>
+<button type="button" aria-role-description="light switch" aria-role-description-braille="ltsw" aria-pressed="false" onclick="togglePressed(this)">
+Basement
+</button>
+</li>
+</ul>
+
+<h2>Question 2</h2>
 <p>
 Choose the furthest planet from the sun.
 </p>
